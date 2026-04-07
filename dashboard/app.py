@@ -11,3 +11,5 @@ filtered_data = df[df['coffee_name'] == coffee_name]
 st.write(filtered_data)
 st.bar_chart(filtered_data.groupby('date')['money'].sum())
 
+
+# run with streamlit run .\app.py
