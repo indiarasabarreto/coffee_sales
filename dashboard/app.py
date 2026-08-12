@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_csv('coffee_data.csv')
-# print(df.columns)
+from pathlib import Path
+df = pd.read_csv(Path(__file__).parent / 'coffee_data.csv')
+
 
 st.title("Dashboard de Vendas")
 
